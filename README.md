@@ -1,6 +1,11 @@
 ## Extensions required
 - [EditorConfig](https://editorconfig.org/)
+- [Eslint](https://eslint.org/)
 
+## Auxiliary tools added
+- [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
+
+###
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
