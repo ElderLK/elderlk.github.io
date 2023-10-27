@@ -1,8 +1,10 @@
 ## Extensions required
+
 - [EditorConfig](https://editorconfig.org/)
 - [Eslint](https://eslint.org/)
 
 ## Auxiliary tools added
+
 - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
 
 ###
