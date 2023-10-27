@@ -2,10 +2,12 @@
 
 - [EditorConfig](https://editorconfig.org/)
 - [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 ## Auxiliary tools added
 
 - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
+- [jest](https://jestjs.io/)
 
 ###
 
