@@ -10,6 +10,7 @@
 - [jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Storybook](https://storybook.js.org/)
+- [Plop](https://plopjs.com/)
 
 ## Git commit without tests and lint
 
