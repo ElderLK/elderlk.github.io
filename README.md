@@ -8,6 +8,13 @@
 
 - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
 - [jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+
+## Git commit without tests and lint
+
+```bash
+  git commit -m "my commit msg" --no-verify
+```
 
 ###
 
