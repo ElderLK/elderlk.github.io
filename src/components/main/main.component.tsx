@@ -1,6 +1,10 @@
-const Main = () => (
+type Props = {
+  description: string
+}
+
+const Main = ({ description = 'My portfolio' }: Props) => (
   <main className="bg-red-800 dark:bg-test h-screen w-screen">
-    <h1>My portfolio</h1>
+    <h1>{description}</h1>
   </main>
 )
 

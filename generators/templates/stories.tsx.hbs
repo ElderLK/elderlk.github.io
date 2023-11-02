@@ -1,10 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
-
-import Main from './main.component'
+import {{pascalCase name}} from "./{{dashCase name}}.component";
 
 const meta = {
-  title: 'Main',
-  component: Main,
+  title: "{{pascalCase name}}",
+  component: {{pascalCase name}},
   parameters: {
     layout: 'centered'
   },
@@ -16,7 +15,5 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
-  args: {
-    description: 'Primary'
-  }
+  args: {}
 }

@@ -9,6 +9,7 @@
 - [git-commit-msg-linter](https://www.npmjs.com/package/git-commit-msg-linter)
 - [jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Storybook](https://storybook.js.org/)
 
 ## Git commit without tests and lint
 
@@ -17,6 +18,8 @@
 ```
 
 ###
+
+icons - https://lucide.dev/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
