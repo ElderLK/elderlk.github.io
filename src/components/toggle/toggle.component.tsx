@@ -1,14 +1,33 @@
 import React from 'react'
 import { InputHTMLAttributes } from 'react'
-import { tv, type VariantProps } from 'tailwind-variants'
+import { tv } from 'tailwind-variants'
 
 const toggleVariants = tv({
-  base: "bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:bg-white after:border-gray-300 after:border after:rounded-full after:transition-all dark:border-gray-600 peer-checked:bg-blue-600",
+  slots: {
+    bar: 'peer relative rounded-full bg-gray-300 peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800',
+    button:
+      'absolute flex items-center rounded-full border border-gray-300 bg-white text-gray-950 transition-all'
+  },
   variants: {
     size: {
-      sm: 'w-9 h-5 after:h-4 after:w-4 after:top-[2px] after:left-[2px]',
-      md: 'w-11 h-6 after:h-5 after:w-5 after:top-[2px] after:left-[2px]',
-      lg: 'w-14 h-7 after:h-6 after:w-6 after:top-0.5 after:left-[4px] '
+      sm: {
+        bar: 'h-5 w-9',
+        button: 'left-[2px] top-[2px] h-4 w-4'
+      },
+      md: {
+        bar: 'h-6 w-11',
+        button: 'left-[2px] top-[2px] h-5 w-5'
+      },
+      lg: {
+        bar: 'h-5 w-9 sm:h-7 sm:w-14',
+        button:
+          'left-[2px] top-[2px] h-4 w-4 sm:left-[4px] sm:top-0.5 sm:h-6 sm:w-6'
+      }
+    },
+    checked: {
+      true: {
+        button: 'translate-x-full'
+      }
     }
   },
   defaultVariants: {
@@ -16,16 +35,18 @@ const toggleVariants = tv({
   }
 })
 
-type ToggleVariants = VariantProps<typeof toggleVariants>
-
-type Props = ToggleVariants & {
+type Props = {
   label?: string
   onToggle?: (status: boolean) => void
   checked?: boolean
+  size?: 'md' | 'sm' | 'lg'
+  icon?: React.ReactNode
+  checkedIcon?: React.ReactNode
 } & Omit<InputHTMLAttributes<HTMLInputElement>, 'size'>
 
 const Toggle = React.forwardRef<HTMLInputElement, Props>(
-  ({ label, onToggle, checked, size }: Props, ref) => {
+  ({ label, onToggle, checked, size, icon, checkedIcon }: Props, ref) => {
+    const { bar, button } = toggleVariants()
     const [isChecked, setIsChecked] = React.useState(checked)
 
     const onChange = () => {
@@ -36,16 +57,24 @@ const Toggle = React.forwardRef<HTMLInputElement, Props>(
     }
 
     return (
-      <label className="relative inline-flex items-center cursor-pointer">
+      <label className="relative inline-flex cursor-pointer items-center">
         <input
           value=""
           type="checkbox"
-          checked={isChecked}
-          onChange={onChange}
-          className="sr-only peer"
+          // checked={isChecked}
+          // onChange={onChange}
+          className="peer sr-only"
           ref={ref}
+          {...(!ref && {
+            checked: isChecked,
+            onChange
+          })}
         />
-        <div className={toggleVariants({ size })}></div>
+        <div className={bar({ size })}>
+          <span className={button({ checked: isChecked, size })}>
+            {isChecked ? icon : checkedIcon}
+          </span>
+        </div>
         <span
           className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
           role="label"
