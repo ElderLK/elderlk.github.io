@@ -11,6 +11,7 @@
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Storybook](https://storybook.js.org/)
 - [Plop](https://plopjs.com/)
+- [Tailwind Variants](https://www.tailwind-variants.org/docs/introduction)
 
 ## Git commit without tests and lint
 
