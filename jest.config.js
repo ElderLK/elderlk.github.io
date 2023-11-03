@@ -5,7 +5,9 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/app/**',
-    '!src/**/stories.tsx'
+    '!src/providers/index.ts(x)?',
+    '!src/hooks/index.ts(x)?',
+    '!src/**/*.stories.tsx'
   ],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],

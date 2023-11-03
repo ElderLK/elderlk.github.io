@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { ThemeContext, ThemeOptions } from '@/hooks/use-theme/use-theme-hooks'
+import { ThemeContext, ThemeOptions } from '@/hooks'
 import { getStorageItem, setStorageItem } from '@/utils/localStorage'
 
 export type ThemeProviderProps = {
