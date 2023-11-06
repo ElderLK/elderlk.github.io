@@ -10,10 +10,10 @@ const Header = () => {
   return (
     <Toggle
       size="lg"
-      checked={theme === 'light'}
+      checked={theme === 'dark'}
       onToggle={switchTheme}
-      icon={<LightbulbOff />}
-      checkedIcon={<Lightbulb />}
+      icon={<Lightbulb />}
+      checkedIcon={<LightbulbOff />}
     />
   )
 }
