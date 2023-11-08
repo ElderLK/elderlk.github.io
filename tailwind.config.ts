@@ -9,6 +9,16 @@ const config: Config = {
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
     extend: {
+      animation: {
+        cursor: 'cursor .6s linear infinite alternate'
+      },
+      keyframes: {
+        cursor: {
+          '0%, 40%': { opacity: '1' },
+          '60%, 100%': { opacity: '0' }
+        }
+      },
+
       colors: {
         test: '#c542f5'
       },
