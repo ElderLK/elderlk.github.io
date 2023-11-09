@@ -12,9 +12,11 @@ const Typewritter = ({ onFinished, text, delay = 200 }: Props) => {
   const [stopTyping, setStopTyping] = React.useState(false)
   const typing = currentIndex < textSize
 
-  if (stopTyping && !!onFinished) {
-    onFinished()
-  }
+  React.useEffect(() => {
+    if (stopTyping && !!onFinished) {
+      onFinished()
+    }
+  }, [stopTyping, onFinished])
 
   React.useEffect(() => {
     setCurrentIndex(0)
@@ -43,7 +45,7 @@ const Typewritter = ({ onFinished, text, delay = 200 }: Props) => {
 
   return (
     <span
-      className={`after:ml-1 after:h-full after:animate-cursor after:border-r after:content-[''] ${
+      className={`after:ml-1 after:h-full after:animate-cursor after:border-r-2 after:border-stone-900 after:content-[''] dark:after:border-stone-50 ${
         stopTyping && 'after:hidden'
       }`}
     >
@@ -52,4 +54,4 @@ const Typewritter = ({ onFinished, text, delay = 200 }: Props) => {
   )
 }
 
-export default Typewritter
+export default React.memo(Typewritter)

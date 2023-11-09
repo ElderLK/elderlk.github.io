@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScrollAnimation /> should render the component 1`] = `
+<ol>
+  <li>
+    one
+  </li>
+  <li>
+    two
+  </li>
+  <li>
+    three
+  </li>
+</ol>
+`;

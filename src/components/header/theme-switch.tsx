@@ -4,7 +4,7 @@ import { Toggle } from '@/components'
 import { useTheme } from '@/hooks'
 import { Lightbulb, LightbulbOff } from 'lucide-react'
 
-const Header = () => {
+const ThemeSwitch = () => {
   const { theme, switchTheme } = useTheme()
 
   return (
@@ -18,4 +18,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default ThemeSwitch
