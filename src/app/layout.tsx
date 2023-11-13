@@ -1,25 +1,31 @@
-import type { Metadata } from 'next'
+import { ReactNode } from 'react'
+import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl'
 import { Inter } from 'next/font/google'
-import './globals.css'
+
+import { default as defaultLocale } from '@/locale/en.json'
 
 import { ThemeProvider } from '@/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Profile Elder Dev',
-  description: 'This is a website about my background'
+import './globals.css'
+
+type Props = {
+  children: ReactNode
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider
+            locale="en"
+            messages={defaultLocale as unknown as AbstractIntlMessages}
+          >
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

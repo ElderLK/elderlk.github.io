@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        cursor: 'cursor .6s linear infinite alternate'
+        cursor: 'cursor .6s linear infinite alternate',
+        blink: 'cursor 1s linear 5 backwards'
       },
       keyframes: {
         cursor: {

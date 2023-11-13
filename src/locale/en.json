@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "helloWorld": "Hello World !"
+  },
+  "welcomeSection": {
+    "ue": "sdsds",
+    "terminal": [
+      "Hi! 👋🏻",
+      "Welcome to my website.",
+      "I'm Elder, a software engineer rooted in Curitiba, Brazil.",
+      "Please feel free to explore this website and get to know more about me."
+    ]
+  }
+}

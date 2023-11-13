@@ -10,14 +10,16 @@
     "test:watch": "yarn test --watch",
     "test:ci": "jest --runInBand",
     "lint": "next lint",
+    "live": "npx serve@latest out",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate": "npx plop --plopfile generators/plopfile.js"
+    "generate": "npx plop --plopfile gennpxerators/plopfile.js"
   },
   "dependencies": {
     "lucide-react": "^0.292.0",
     "next": "^14.0.1",
+    "next-intl": "^2.22.1",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-variants": "^0.1.18"

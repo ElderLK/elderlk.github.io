@@ -1,0 +1,14 @@
+{
+  "HomePage": {
+    "helloWorld": "Olá mundo !"
+  },
+  "welcomeSection": {
+    "ue": "aaaa",
+    "terminal": [
+      "Olá! 👋🏻",
+      "Bem-vindo ao meu website.",
+      "Olá, meu nome é Elder, sou um engenheiro de software residente em Curitiba, Brasil.",
+      "Fique à vontade para explorar este site e saber mais sobre mim."
+    ]
+  }
+}
