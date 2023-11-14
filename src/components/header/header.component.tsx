@@ -1,13 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 import ThemeSwitch from './theme-switch'
+import Select from '../select/select.component'
 
 const Header = () => {
   return (
     <header className="fixed z-20 w-full">
       <nav className="border-gray-200 bg-white bg-opacity-50 px-4 py-2.5 dark:bg-gray-800  lg:px-6">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-          <ThemeSwitch />
+          <div className="flex space-x-2">
+            <ThemeSwitch />
+            <Select />
+          </div>
           <div className="flex items-center lg:order-2">
             <button
               data-collapse-toggle="mobile-menu-2"

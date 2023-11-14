@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react'
-import Header from './header.component'
+import Select from './select.component'
 
 const meta = {
-  title: 'Header',
-  component: Header,
+  title: 'Select',
+  component: Select,
   parameters: {
     nextjs: {
       appDirectory: true,

@@ -1,3 +1,4 @@
+const path = require('path')
 import type { StorybookConfig } from '@storybook/nextjs'
 
 const config: StorybookConfig = {
@@ -9,8 +10,17 @@ const config: StorybookConfig = {
     '@storybook/addon-onboarding',
     '@storybook/addon-interactions',
     '@storybook/addon-themes',
-    '@storybook/themes'
+    'storybook-react-intl'
   ],
+  webpackFinal: async (config) => {
+    if (config.resolve)
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@': path.resolve(__dirname, '../src')
+      }
+
+    return config
+  },
   framework: {
     name: '@storybook/nextjs',
     options: {}

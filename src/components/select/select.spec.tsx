@@ -3,25 +3,24 @@ import { render, screen } from '@testing-library/react'
 import { NextIntlClientProvider } from 'next-intl'
 import { useRouter as mockUseRouter } from 'next-router-mock'
 
-import Header from './header.component'
 import { default as defaultLocale } from '../../locale/en.json'
+
+import Select from './select.component'
 
 jest.mock('next/navigation', () => ({
   useRouter: mockUseRouter,
   usePathname: jest.fn().mockReturnValue('/some-route')
 }))
 
-describe('<Header />', () => {
+describe('<Select />', () => {
   it('should render the component', () => {
     const { container } = render(
       <NextIntlClientProvider locale="en" messages={defaultLocale}>
-        <Header />
+        <Select />
       </NextIntlClientProvider>
     )
 
-    expect(
-      screen.getByRole('button', { name: /Open main menu/i })
-    ).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /English/i })).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()
   })

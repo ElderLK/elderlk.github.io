@@ -1,6 +1,8 @@
 {
-  "HomePage": {
-    "helloWorld": "Hello World !"
+  "locale": {
+    "en": "English",
+    "pt": "Portuguese",
+    "es": "Spanish"
   },
   "welcomeSection": {
     "title": "Welcome",

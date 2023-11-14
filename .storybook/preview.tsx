@@ -1,8 +1,12 @@
 require('../src/app/globals.css')
 
-import type { Preview } from '@storybook/react'
+import React from 'react'
 
+import type { Preview } from '@storybook/react'
+import { NextIntlClientProvider } from 'next-intl'
 import { withThemeByDataAttribute } from '@storybook/addon-themes'
+
+import { default as defaultLocale } from '../src/locale/en.json'
 
 const preview: Preview = {
   parameters: {
@@ -16,6 +20,11 @@ const preview: Preview = {
   },
 
   decorators: [
+    (Story) => (
+      <NextIntlClientProvider locale="en" messages={defaultLocale}>
+        <Story />
+      </NextIntlClientProvider>
+    ),
     withThemeByDataAttribute({
       themes: {
         light: '',
