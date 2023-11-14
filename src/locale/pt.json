@@ -3,12 +3,69 @@
     "helloWorld": "Olá mundo !"
   },
   "welcomeSection": {
-    "ue": "aaaa",
-    "terminal": [
-      "Olá! 👋🏻",
-      "Bem-vindo ao meu website.",
-      "Olá, meu nome é Elder, sou um engenheiro de software residente em Curitiba, Brasil.",
-      "Fique à vontade para explorar este site e saber mais sobre mim."
-    ]
+    "title": "Bem-vindo",
+    "terminal": {
+      "ms1": "Olá! 👋🏻",
+      "ms2": "Bem-vindo ao meu website.",
+      "ms3": "Olá, meu nome é Elder, sou um engenheiro de software residente em Curitiba, Brasil.",
+      "ms4": "Fique à vontade para explorar este site e saber mais sobre mim."
+    }
+  },
+  "timelineSection": {
+    "title": "Minha linha do tempo abreviada",
+    "1": {
+      "date": "1992",
+      "title": "Nascimento",
+      "description": "Nasci em 29 de fevereiro de 1992, que foi um ano bissexto.",
+      "icon": "Baby"
+    },
+    "2": {
+      "date": "2002",
+      "title": "Primeiro computador",
+      "description": "Este é o ano em que comecei a amar computadores, quando meu pai trouxe um computador para nossa casa.",
+      "icon": "Computer"
+    },
+    "3": {
+      "date": "2010",
+      "title": "Adolescência",
+      "description": "Concluí o ensino médio e um curso técnico em mecânica industrial.",
+      "icon": "BookOpenCheck"
+    },
+    "4": {
+      "date": "2012",
+      "title": "Explorando uma Nova Carreira",
+      "description": "Depois de trabalhar meio período em várias pequenas indústrias como mecânico, decidi mudar minha carreira e comecei meus estudos em Ciência da Computação na UTFPR.",
+      "icon": "Briefcase"
+    },
+    "5": {
+      "date": "2016",
+      "title": "Um Novo Começo em uma Nova Carreira",
+      "description": "Este foi o ano em que comecei meu estágio como desenvolvedor PHP em uma empresa de logística, trabalhando em software de gestão de armazéns.",
+      "icon": "Code2"
+    },
+    "6": {
+      "date": "2017",
+      "title": "Troca de Emprego",
+      "description": "Primeiro, me formei 🎉, e depois fui contratado para trabalhar como desenvolvedor Salesforce em uma empresa Edtech.",
+      "icon": "GraduationCap"
+    },
+    "7": {
+      "date": "2018",
+      "title": "Transição para um Novo Cargo",
+      "description": "Decidi me candidatar a uma posição aberta dentro da empresa, entrei para a equipe de desenvolvimento web. Fui aceito, e foi então que comecei a trabalhar principalmente com Node.js e TypeScript.",
+      "icon": "ArrowLeftRight"
+    },
+    "8": {
+      "date": "2020",
+      "title": "Mudança de Emprego",
+      "description": "Mudei para um novo emprego onde enfrentei o desafio de criar um aplicativo financeiro pessoal do zero, usando principalmente React e Node.",
+      "icon": "Activity"
+    },
+    "9": {
+      "date": "Atualmente",
+      "title": "Comprometido com o Aprimoramento",
+      "description": "Atualmente, estou trabalhando como desenvolvedor, criando e aprimorando recursos na aplicação financeira que desenvolvi. Simultaneamente, estou comprometido com o estudo contínuo para aprimorar e expandir ainda mais minhas habilidades.",
+      "icon": "CalendarClock"
+    }
   }
 }

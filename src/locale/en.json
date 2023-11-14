@@ -3,12 +3,69 @@
     "helloWorld": "Hello World !"
   },
   "welcomeSection": {
-    "ue": "sdsds",
-    "terminal": [
-      "Hi! 👋🏻",
-      "Welcome to my website.",
-      "I'm Elder, a software engineer rooted in Curitiba, Brazil.",
-      "Please feel free to explore this website and get to know more about me."
-    ]
+    "title": "Welcome",
+    "terminal": {
+      "ms1": "Hi! 👋🏻",
+      "ms2": "Welcome to my website.",
+      "ms3": "I'm Elder, a software engineer rooted in Curitiba, Brazil.",
+      "ms4": "Please feel free to explore this website and get to know more about me."
+    }
+  },
+  "timelineSection": {
+    "title": "My Brief timeline Overview",
+    "1": {
+      "date": "1992",
+      "title": "Born",
+      "description": "I was born on February 29, 1992, which was in a leap year.",
+      "icon": "Baby"
+    },
+    "2": {
+      "date": "2002",
+      "title": "First computer",
+      "description": "This is the year when I started loving computers, the year when my father brought a computer to our home.",
+      "icon": "Computer"
+    },
+    "3": {
+      "date": "2010",
+      "title": "Teenage hood",
+      "description": "I completed high school and a technical course in industrial mechanics.",
+      "icon": "BookOpenCheck"
+    },
+    "4": {
+      "date": "2012",
+      "title": "Exploring a New Career Path",
+      "description": "After working part-time in several small industries as a mechanic, I decided to change my career path and began my studies in Computer Science at UTFPR.",
+      "icon": "Briefcase"
+    },
+    "5": {
+      "date": "2016",
+      "title": "A Fresh Start in a New Career",
+      "description": "This was the year when I began my internship as a PHP developer at a logistics company, working on warehouse management software.",
+      "icon": "Code2"
+    },
+    "6": {
+      "date": "2017",
+      "title": "Change Jobs",
+      "description": "First, I graduated 🎉, and afterward, I was hired to work as a Salesforce developer in an Edtech company.",
+      "icon": "GraduationCap"
+    },
+    "7": {
+      "date": "2018",
+      "title": "Transitioned to a New Job Role",
+      "description": "I decided to apply for an open position within the company I was going to join the web team. I was accepted, and that's when I primarily began working with Node.js and TypeScript.",
+      "icon": "ArrowLeftRight"
+    },
+    "8": {
+      "date": "2020",
+      "title": "Change Jobs",
+      "description": "I moved to a new job where I face the challenge of creating a personal financial app from scratch, primarily using React and Node.",
+      "icon": "Activity"
+    },
+    "9": {
+      "date": "Nowadays",
+      "title": "Engaging in Enhancing",
+      "description": "I am presently working as a developer, creating and enhancing features in the financial app that I developed. Simultaneously, I am committed to ongoing self-study to further refine and expand my skill set.",
+      "icon": "CalendarClock"
+    }
   }
 }

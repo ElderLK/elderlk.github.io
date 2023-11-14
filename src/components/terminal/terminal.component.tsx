@@ -94,7 +94,7 @@ const Terminal = ({ title, texts }: Props) => {
   }, [])
 
   return (
-    <div className="h-full min-h-[400px] w-full overflow-hidden rounded border bg-slate-200 dark:border-slate-700 dark:bg-zinc-900">
+    <div className="z-10 h-full min-h-[400px] w-full overflow-hidden rounded border bg-slate-200 dark:border-slate-700 dark:bg-zinc-900">
       <div className="flex items-center bg-slate-300 dark:bg-zinc-800">
         <div className="flex gap-x-1 pl-2">
           <div className="h-4 w-4 rounded-full bg-red-600" />
@@ -118,13 +118,13 @@ const Terminal = ({ title, texts }: Props) => {
             className="my-8 flex cursor-pointer justify-center space-x-3"
             href="#timeline"
           >
-            <pre className="animate-blink text-center text-[2px] leading-[2px]">
+            <pre className="animate-blink text-center text-[1px] leading-[1px]  text-zinc-800 dark:text-zinc-200 sm:text-[2px] sm:leading-[2px]">
               {arrowDownAsciiArt}
             </pre>
-            <pre className="animate-blink text-center text-[2px] leading-[2px]">
+            <pre className="animate-blink text-center text-[1px] leading-[1px] text-zinc-800 dark:text-zinc-200 sm:text-[2px] sm:leading-[2px]">
               {arrowDownAsciiArt}
             </pre>
-            <pre className="animate-blink text-center text-[2px] leading-[2px]">
+            <pre className="animate-blink text-center text-[1px] leading-[1px] text-zinc-800 dark:text-zinc-200 sm:text-[2px] sm:leading-[2px]">
               {arrowDownAsciiArt}
             </pre>
           </Link>

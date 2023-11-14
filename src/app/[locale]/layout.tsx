@@ -21,7 +21,7 @@ async function getMessages(locale: string) {
 }
 
 export async function generateStaticParams() {
-  return ['en', 'pt'].map((locale) => ({ locale }))
+  return ['en', 'pt', 'es'].map((locale) => ({ locale }))
 }
 
 type Props = {
