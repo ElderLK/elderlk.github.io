@@ -1,4 +1,11 @@
 {
+  "header": {
+    "link1": "Bienvenido",
+    "link2": "Cronología",
+    "link3": "Herramientas",
+    "link4": "Currículum",
+    "link5": "Contacto"
+  },
   "locale": {
     "en": "Inglés",
     "pt": "Portugués",
@@ -47,7 +54,7 @@
     },
     "6": {
       "date": "2017",
-      "title": "Cambio de Trabajo",
+      "title": "Graduado",
       "description": "Primero, me gradué 🎉, y después fui contratado para trabajar como desarrollador Salesforce en una empresa Edtech.",
       "icon": "GraduationCap"
     },

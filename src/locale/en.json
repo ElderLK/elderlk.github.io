@@ -1,4 +1,11 @@
 {
+  "header": {
+    "link1": "Welcome",
+    "link2": "Timeline",
+    "link3": "Tooling",
+    "link4": "Resume",
+    "link5": "Contact"
+  },
   "locale": {
     "en": "English",
     "pt": "Portuguese",
@@ -47,7 +54,7 @@
     },
     "6": {
       "date": "2017",
-      "title": "Change Jobs",
+      "title": "Graduated",
       "description": "First, I graduated 🎉, and afterward, I was hired to work as a Salesforce developer in an Edtech company.",
       "icon": "GraduationCap"
     },

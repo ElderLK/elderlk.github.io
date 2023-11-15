@@ -19,7 +19,9 @@ const config: Config = {
           '60%, 100%': { opacity: '0' }
         }
       },
-
+      transitionProperty: {
+        height: 'height'
+      },
       colors: {
         test: '#c542f5'
       },

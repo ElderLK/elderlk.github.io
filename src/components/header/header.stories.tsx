@@ -4,6 +4,13 @@ import Header from './header.component'
 const meta = {
   title: 'Header',
   component: Header,
+  decorators: [
+    (Story) => (
+      <div style={{ width: '100vw' }}>
+        <Story />
+      </div>
+    )
+  ],
   parameters: {
     nextjs: {
       appDirectory: true,

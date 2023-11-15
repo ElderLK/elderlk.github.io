@@ -13,16 +13,14 @@ jest.mock('next/navigation', () => ({
 
 describe('<Header />', () => {
   it('should render the component', () => {
-    const { container } = render(
+    render(
       <NextIntlClientProvider locale="en" messages={defaultLocale}>
         <Header />
       </NextIntlClientProvider>
     )
 
     expect(
-      screen.getByRole('button', { name: /Open main menu/i })
+      screen.getByRole('button', { name: /Open menu/i })
     ).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
   })
 })

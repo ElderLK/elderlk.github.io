@@ -1,4 +1,11 @@
 {
+  "header": {
+    "link1": "Bem-vindo",
+    "link2": "Linha do tempo",
+    "link3": "Ferramental",
+    "link4": "Currículo",
+    "link5": "Contato"
+  },
   "locale": {
     "en": "Inglês",
     "pt": "Português",
@@ -9,7 +16,7 @@
     "terminal": {
       "ms1": "Olá! 👋🏻",
       "ms2": "Bem-vindo ao meu website.",
-      "ms3": "Olá, meu nome é Elder, sou um engenheiro de software residente em Curitiba, Brasil.",
+      "ms3": "Meu nome é Elder, sou um engenheiro de software residente em Curitiba, Brasil.",
       "ms4": "Fique à vontade para explorar este site e saber mais sobre mim."
     }
   },
@@ -47,7 +54,7 @@
     },
     "6": {
       "date": "2017",
-      "title": "Troca de Emprego",
+      "title": "Diplomado",
       "description": "Primeiro, me formei 🎉, e depois fui contratado para trabalhar como desenvolvedor Salesforce em uma empresa Edtech.",
       "icon": "GraduationCap"
     },
