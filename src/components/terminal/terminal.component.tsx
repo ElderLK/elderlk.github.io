@@ -94,7 +94,7 @@ const Terminal = ({ title, texts }: Props) => {
   }, [])
 
   return (
-    <div className="z-10 h-full min-h-[400px] w-full overflow-hidden rounded border bg-slate-200 dark:border-slate-700 dark:bg-zinc-900">
+    <div className="z-10 mt-14 h-full min-h-[400px] w-full overflow-hidden rounded border bg-slate-200 dark:border-slate-700 dark:bg-zinc-900">
       <div className="flex items-center bg-slate-300 dark:bg-zinc-800">
         <div className="flex gap-x-1 pl-2">
           <div className="h-4 w-4 rounded-full bg-red-600" />
