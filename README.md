@@ -1,3 +1,7 @@
+## Project
+
+This is my portfolio, and I've finally mustered the courage to create one. It's primarily built using Next.js with Tailwind CSS.
+
 ## Extensions required
 
 - [EditorConfig](https://editorconfig.org/)
