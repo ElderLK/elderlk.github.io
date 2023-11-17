@@ -11,6 +11,18 @@
     "pt": "Portuguese",
     "es": "Spanish"
   },
+  "resumeSection": {
+    "title": "resume",
+    "aboutMe": "In brief, I have a bachelor’s degree in Computer Science and been working as a Web Developer since 2016.  Currently I am working as Full Stack Developer using Node.js, React.js and PostgreSQL, but I have experience with PHP, Salesforce, and Java.",
+    "fullName": "Full name",
+    "age": "Age",
+    "myAge": "{age} Years",
+    "nationality": "Nationality",
+    "myNationality": "Brazilian",
+    "languages": "Languages",
+    "myLanguages": "Portuguese, English",
+    "cvBt": "Open CV"
+  },
   "welcomeSection": {
     "title": "Welcome",
     "terminal": {

@@ -2,11 +2,11 @@ import React from 'react'
 
 type Props = {
   onClickAway: (event: MouseEvent) => void
-  children: React.ReactNode
+  children: React.ReactElement
 }
 
 const ClickAwayListener = ({ children, onClickAway }: Props) => {
-  const wrapperRef = React.useRef<HTMLDivElement>(null)
+  const ref = React.useRef<HTMLDivElement>(null)
 
   React.useEffect(() => {
     /**
@@ -14,9 +14,9 @@ const ClickAwayListener = ({ children, onClickAway }: Props) => {
      */
     function handleClickOutside(event: MouseEvent) {
       if (
-        wrapperRef.current &&
+        ref.current &&
         event.target instanceof HTMLElement &&
-        !wrapperRef.current.contains(event.target)
+        !ref.current.contains(event.target)
       ) {
         onClickAway(event)
       }
@@ -29,7 +29,7 @@ const ClickAwayListener = ({ children, onClickAway }: Props) => {
     }
   }, [onClickAway])
 
-  return <div ref={wrapperRef}>{children}</div>
+  return React.cloneElement(children, { ref })
 }
 
 export default ClickAwayListener

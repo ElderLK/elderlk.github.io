@@ -1,6 +1,7 @@
 import Header from '@/components/header/header.component'
 import SectionWelcome from '@/components/sections/section-welcome'
 import SectionTimeline from '@/components/sections/section-timeline'
+import SectionResume from '@/components/sections/section-resume'
 
 const HomePage = () => {
   return (
@@ -10,6 +11,9 @@ const HomePage = () => {
 
       {/* Welcome section */}
       <SectionWelcome />
+
+      {/* Resume section */}
+      <SectionResume />
 
       {/* Timeline section */}
       <SectionTimeline />

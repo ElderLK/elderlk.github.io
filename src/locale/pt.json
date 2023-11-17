@@ -20,18 +20,30 @@
       "ms4": "Fique à vontade para explorar este site e saber mais sobre mim."
     }
   },
+  "resumeSection": {
+    "title": "currículo",
+    "aboutMe": "Resumidamente, sou formado em Ciência da Computação e trabalho como Desenvolvedor Web desde 2016. Atualmente, atuo como Desenvolvedor Full Stack utilizando Node.js, React.js e PostgreSQL, mas tenho experiência com PHP, Salesforce e Java.",
+    "fullName": "Nome completo",
+    "age": "Idade",
+    "myAge": "{age} anos",
+    "nationality": "Nacionalidade",
+    "myNationality": "Brasileiro",
+    "languages": "Idiomas",
+    "myLanguages": "Português, Inglês",
+    "cvBt": "Abrir Currículo"
+  },
   "timelineSection": {
     "title": "Minha linha do tempo abreviada",
     "1": {
       "date": "1992",
       "title": "Nascimento",
-      "description": "Nasci em 29 de fevereiro de 1992, que foi um ano bissexto.",
+      "description": "Nasci em 29 de fevereiro de 1992, ano bissexto.",
       "icon": "Baby"
     },
     "2": {
       "date": "2002",
       "title": "Primeiro computador",
-      "description": "Este é o ano em que comecei a amar computadores, quando meu pai trouxe um computador para nossa casa.",
+      "description": "Este é o ano em que fiquei aficionado em computadores, quando meu pai trouxe um computador para nossa casa.",
       "icon": "Computer"
     },
     "3": {
@@ -61,7 +73,7 @@
     "7": {
       "date": "2018",
       "title": "Transição para um Novo Cargo",
-      "description": "Decidi me candidatar a uma posição aberta dentro da empresa, entrei para a equipe de desenvolvimento web. Fui aceito, e foi então que comecei a trabalhar principalmente com Node.js e TypeScript.",
+      "description": "Decidi me candidatar a uma posição aberta dentro da empresa, entrei para a equipe de desenvolvimento web. Foi então que comecei a trabalhar principalmente com Node.js e TypeScript.",
       "icon": "ArrowLeftRight"
     },
     "8": {

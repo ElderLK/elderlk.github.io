@@ -8,7 +8,7 @@ type Props = {
 const SectionBase = ({ id, children }: Props) => (
   <section
     id={id}
-    className="mx-auto flex min-h-[80vh] max-w-screen-xl flex-col items-center justify-center p-4"
+    className="mx-auto flex min-h-[60vh] max-w-screen-xl flex-col items-center justify-center p-4"
   >
     {children}
   </section>

@@ -20,6 +20,18 @@
       "ms4": "Siéntete libre de explorar este sitio web y conocer más sobre mí."
     }
   },
+  "resumeSection": {
+    "title": "currículum",
+    "aboutMe": "En resumen, tengo una licenciatura en Ciencias de la Computación y trabajo como Desarrollador Web desde 2016. Actualmente, trabajo como Desarrollador Full Stack utilizando Node.js, React.js y PostgreSQL, pero tengo experiencia con PHP, Salesforce y Java.",
+    "fullName": "Nombre completo",
+    "age": "Edad",
+    "myAge": "{age} años",
+    "nationality": "Nacionalidad",
+    "myNationality": "Brasileño",
+    "languages": "Idiomas",
+    "myLanguages": "Portugués, Inglés",
+    "cvBt": "Descargar CV"
+  },
   "timelineSection": {
     "title": "Mi cronología abreviado",
     "1": {
@@ -31,7 +43,7 @@
     "2": {
       "date": "2002",
       "title": "Primer ordenador",
-      "description": "Este es el año en el que empecé a amar los ordenadores, cuando mi padre trajo uno a nuestra casa.",
+      "description": "Este es el año en el que empecé a gustar los ordenadores, cuando mi padre trajo uno a nuestra casa.",
       "icon": "Computer"
     },
     "3": {
