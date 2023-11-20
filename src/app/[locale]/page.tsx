@@ -5,6 +5,7 @@ import Header from '@/components/header/header.component'
 import SectionWelcome from '@/components/sections/section-welcome'
 import SectionTimeline from '@/components/sections/section-timeline'
 import SectionResume from '@/components/sections/section-resume'
+import SectionSkills from '@/components/sections/section-skills'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,9 @@ const HomePage = () => {
 
       {/* Resume section */}
       <SectionResume />
+
+      {/* Skills section */}
+      <SectionSkills />
 
       {/* Timeline section */}
       <SectionTimeline />

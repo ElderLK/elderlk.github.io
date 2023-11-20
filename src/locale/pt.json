@@ -2,7 +2,7 @@
   "header": {
     "link1": "Bem-vindo",
     "link2": "Linha do tempo",
-    "link3": "Ferramental",
+    "link3": "Habilidades",
     "link4": "Currículo",
     "link5": "Contato"
   },
@@ -10,6 +10,9 @@
     "en": "Inglês",
     "pt": "Português",
     "es": "Espanhol"
+  },
+  "skillsSection": {
+    "title": "Habilidades profissionais"
   },
   "welcomeSection": {
     "title": "Bem-vindo",

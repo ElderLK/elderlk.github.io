@@ -7,11 +7,24 @@ import { ThemeProvider } from '@/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Profile Elder Dev',
-  description: 'This is a website about my background'
+const metaDescriptionOptions: Record<string, { description: string }> = {
+  pt: {
+    description: 'Site Portfolio de ElderLK.'
+  },
+  en: {
+    description: 'The portfolio website of ElderLK.'
+  },
+  es: {
+    description: 'Sitio web de la cartera ElderLK.'
+  }
 }
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return {
+    title: 'Elder Kuss',
+    description: metaDescriptionOptions[params.locale ?? 'en']?.description
+  }
+}
 async function getMessages(locale: string) {
   try {
     return (await import(`../../locale/${locale}.json`)).default

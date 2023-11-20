@@ -2,7 +2,7 @@
   "header": {
     "link1": "Welcome",
     "link2": "Timeline",
-    "link3": "Tooling",
+    "link3": "Professional Skills",
     "link4": "Resume",
     "link5": "Contact"
   },
@@ -10,6 +10,9 @@
     "en": "English",
     "pt": "Portuguese",
     "es": "Spanish"
+  },
+  "skillsSection": {
+    "title": "Professional Skills"
   },
   "resumeSection": {
     "title": "resume",

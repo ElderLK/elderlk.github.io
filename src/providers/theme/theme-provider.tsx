@@ -10,7 +10,7 @@ export type ThemeProviderProps = {
 const THEME_KEY = 'theme'
 
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = React.useState<ThemeOptions>('light')
+  const [theme, setTheme] = React.useState<ThemeOptions>('dark')
 
   React.useEffect(() => {
     const data = getStorageItem(THEME_KEY)

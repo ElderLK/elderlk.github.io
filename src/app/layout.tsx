@@ -9,9 +9,16 @@ import { ThemeProvider } from '@/providers'
 const inter = Inter({ subsets: ['latin'] })
 
 import './globals.css'
+import { Metadata } from 'next'
 
 type Props = {
   children: ReactNode
+}
+
+export const metadata: Metadata = {
+  title: 'Elder Kuss',
+  description: 'The portfolio website of ElderLK.',
+  metadataBase: new URL('https://elderlk.github.io')
 }
 
 export default function RootLayout({ children }: Props) {

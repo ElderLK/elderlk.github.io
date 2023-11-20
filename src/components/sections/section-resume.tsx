@@ -1,17 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 
-import SectionBase from './section-base'
 import { useTranslations } from 'next-intl'
+
+import Heading from '@/components/heading/heading.component'
+
+import SectionBase from './section-base'
 
 const SectionResume = () => {
   const t = useTranslations('resumeSection')
 
   return (
     <SectionBase id="resume">
-      <h1 className="mb-10 text-3xl font-bold uppercase text-slate-800 dark:text-slate-200">
+      <Heading lineLeft size="lg">
         {t('title')}
-      </h1>
+      </Heading>
 
       <div className="group flex flex-col items-center space-x-10 rounded-lg bg-slate-100 bg-opacity-80 p-20 dark:bg-slate-950 dark:bg-opacity-80 md:flex-row">
         <img

@@ -4,6 +4,7 @@ import { LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
 import { IconsByName } from '@/utils/icons'
+import Heading from '@/components/heading/heading.component'
 import ScrollAnimation from '@/components/scroll-animation/scroll-animation.component'
 
 import SectionBase from './section-base'
@@ -27,9 +28,9 @@ const SectionTimeline = () => {
 
   return (
     <SectionBase id="timeline">
-      <h1 className="mb-10 text-3xl font-bold uppercase text-slate-800 dark:text-slate-200">
+      <Heading lineLeft size="lg">
         {t('title')}
-      </h1>
+      </Heading>
       <ScrollAnimation>
         <ol className="relative mb-60 min-w-full overflow-x-hidden border-slate-200 dark:border-slate-700">
           {timelines.map((timeline, idx) => (

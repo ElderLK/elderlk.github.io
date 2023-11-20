@@ -11,6 +11,9 @@
     "pt": "Portugués",
     "es": "Español"
   },
+  "skillsSection": {
+    "title": "Habilidades profesionales"
+  },
   "welcomeSection": {
     "title": "Bienvenido/a",
     "terminal": {
