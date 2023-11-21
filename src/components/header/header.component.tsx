@@ -75,7 +75,7 @@ const Header = () => {
           }}
         >
           <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between">
-            <div className="flex w-36 space-x-2">
+            <div className="flex space-x-2 sm:w-36">
               <ThemeSwitch />
 
               <Select />

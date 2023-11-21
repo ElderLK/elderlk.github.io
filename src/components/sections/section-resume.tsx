@@ -16,13 +16,13 @@ const SectionResume = () => {
         {t('title')}
       </Heading>
 
-      <div className="group flex flex-col items-center space-x-10 rounded-lg bg-slate-100 bg-opacity-80 p-20 dark:bg-slate-950 dark:bg-opacity-80 md:flex-row">
+      <div className="group flex flex-col items-center space-x-10 rounded-lg bg-slate-100 bg-opacity-80 dark:bg-slate-950 dark:bg-opacity-80 md:flex-row md:p-20">
         <img
           alt="My profile picture"
           src="/images/me.png"
           className="h-96 w-80 rounded-lg blur-sm transition-all duration-300 group-hover:blur-none"
         />
-        <div className="text-lg font-semibold text-gray-900 dark:text-gray-100 lg:text-2xl">
+        <div className="z-10 text-lg font-semibold text-gray-900 dark:text-gray-100 lg:text-2xl">
           <h3 className="mb-10">{t('aboutMe')}</h3>
           <div className="flex space-x-4">
             <div>

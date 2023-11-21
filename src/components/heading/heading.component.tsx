@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants'
 
 const toggleVariants = tv({
   slots: {
-    heading: 'mb-10 font-bold uppercase text-slate-800 dark:text-slate-200'
+    heading: 'z-10 mb-10 font-bold uppercase text-slate-800 dark:text-slate-200'
   },
   variants: {
     size: {
