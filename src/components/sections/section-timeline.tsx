@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { LucideIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
@@ -26,12 +27,30 @@ const SectionTimeline = () => {
     icon: t(`${msg}.icon`)
   }))
 
+  const handleScroll = React.useCallback(() => {
+    const boxes = document?.querySelectorAll('li')
+    const triggerBottom = (window?.innerHeight / 5) * 4
+
+    boxes.forEach((b, i) => {
+      const odd = i % 2 === 1
+      const boxTop = b.getBoundingClientRect().top
+
+      if (boxTop < triggerBottom) {
+        b.classList.remove(odd ? 'translate-x-[200%]' : '-translate-x-[200%]')
+        b.classList.add('translate-x-0')
+      } else {
+        b.classList.add(odd ? 'translate-x-[200%]' : '-translate-x-[200%]')
+        b.classList.remove('translate-x-0')
+      }
+    })
+  }, [])
+
   return (
     <SectionBase id="timeline">
       <Heading lineLeft size="lg">
         {t('title')}
       </Heading>
-      <ScrollAnimation>
+      <ScrollAnimation handleScroll={handleScroll}>
         <ol className="relative mb-60 min-w-full overflow-x-hidden border-slate-200 dark:border-slate-700">
           {timelines.map((timeline, idx) => (
             <li

@@ -6,6 +6,7 @@ import Heading from '@/components/heading/heading.component'
 import SectionBase from './section-base'
 import RangeBar from '../range-bar/range-bar.component'
 import React from 'react'
+import ScrollAnimation from '../scroll-animation/scroll-animation.component'
 
 type Skill = {
   name: string
@@ -122,6 +123,25 @@ const skills: Skills = {
 const SectionSkills = () => {
   const t = useTranslations('skillsSection')
 
+  const handleScroll = React.useCallback(() => {
+    const toolingSection = document.querySelector('section#tooling')
+    const triggerBottom = window?.innerHeight * 0.8
+
+    if (toolingSection) {
+      const boxTop = toolingSection.getBoundingClientRect().top
+      const boxBottom = toolingSection.getBoundingClientRect().bottom
+
+      const rangeBars = toolingSection.querySelectorAll('.range-bar')
+      rangeBars?.forEach((r) => {
+        if (boxTop < triggerBottom && boxBottom > triggerBottom) {
+          r.classList.add('after:animate-widthPercentage')
+        } else {
+          r.classList.remove('after:animate-widthPercentage')
+        }
+      })
+    }
+  }, [])
+
   return (
     <SectionBase id="tooling">
       <Heading lineLeft size="lg">
@@ -130,7 +150,7 @@ const SectionSkills = () => {
       {Object.keys(skills).map((key) => {
         const skill = skills[key]
         return (
-          <React.Fragment key={key}>
+          <ScrollAnimation handleScroll={handleScroll} key={key}>
             <div className="z-10 my-2 w-full dark:text-gray-300">
               <h4 className="text-lg font-bold">{skill?.name}</h4>
               <h6 className="font-semibold">
@@ -182,7 +202,7 @@ const SectionSkills = () => {
                 })}
               </div>
             )}
-          </React.Fragment>
+          </ScrollAnimation>
         )
       })}
     </SectionBase>

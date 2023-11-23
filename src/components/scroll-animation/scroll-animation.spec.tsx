@@ -6,7 +6,7 @@ import ScrollAnimation from './scroll-animation.component'
 describe('<ScrollAnimation />', () => {
   it('should render the component', () => {
     const { container } = render(
-      <ScrollAnimation>
+      <ScrollAnimation handleScroll={() => {}}>
         <ol>
           <li>one</li>
           <li>two</li>

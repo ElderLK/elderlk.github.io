@@ -22,6 +22,7 @@ export const Primary: Story = {
         <li>two</li>
         <li>three</li>
       </ol>
-    )
+    ),
+    handleScroll: () => {}
   }
 }

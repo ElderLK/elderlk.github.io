@@ -7,9 +7,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   safelist: [
+    'after:w-[50%]',
     'after:w-[60%]',
     'after:w-[65%]',
     'after:w-[70%]',
+    'after:w-[75%]',
     'after:w-[80%]',
     'after:w-[85%]',
     'after:w-[90%]'
